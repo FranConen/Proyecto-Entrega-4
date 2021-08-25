@@ -1,0 +1,44 @@
+.contact{
+    background-color: #000;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    color: white;
+    transform: skewY(-10deg);
+}
+
+.contact .contact-container{
+    transform: skewY(10deg);
+    color: var(--background-color);
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.contact .contact-container h3{
+    color: white;
+}
+
+.contact .contact-container .emails{
+    text-align: right;
+}
+
+.contact .contact-container .emails h3{
+    text-align: right;
+}
+
+.contact .contact-container .location h3{
+    text-align: left;
+}
+
+.contact .contact-container .social{
+    text-align: center;
+}
+
+.contact .contact-container .social a:hover path{
+    fill: var(--highlight-color);
+}
+
+footer{
+    background-color: #000;
+    height: 450px;
+    margin-top: -170px;
+}

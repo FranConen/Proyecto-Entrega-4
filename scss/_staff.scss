@@ -1,0 +1,52 @@
+.grid .item2{
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    
+}
+
+.grid .item2 img{
+    width: 101%;    
+    margin-top: -60px;
+    transform: skewY(10deg) scale(1.2,1.2);
+    transition: all 0.075s;
+}
+
+.grid .item2:hover img{
+    transform: skewY(10deg) scale(1.4,1.4);
+}
+
+.grid .item2 .bg-hover{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 150%;
+    display: grid;
+    position: absolute;
+    z-index: 2;
+    top: -25%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    transform: skewY(10deg) scale(1,1);
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.grid .item2:hover .bg-hover{
+    overflow: hidden;
+    opacity: 1;
+}
+
+.grid .item2:hover .bg-hover .info{
+    animation-name: bounce;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in-out;
+}
+
+.grid .item2 .bg-hover .title{
+    color: white;
+}
+.grid .item2 .bg-hover .customer{
+    color: var(--background-color);
+}
